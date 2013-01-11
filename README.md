@@ -32,7 +32,6 @@ This mark up will be used for the new portal site for the Six Past Three forum. 
 <div class="body">
 	<h1>test</h1>
 </div>
-
 ```
 
 ```css
@@ -40,6 +39,5 @@ This mark up will be used for the new portal site for the Six Past Three forum. 
 .body {
 	background: black;
 }
-
 ```
 
