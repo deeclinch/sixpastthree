@@ -1,3 +1,5 @@
+![Six Past Three](http://img40.imageshack.us/img40/7527/supernaturalsupernatura.gif)
+
 # Six Past Three Portal
 
 This mark up will be used for the new portal site for the Six Past Three forum. The portal will be used for news and reviews posted by the admin's of the forum, something that can be kept up to date and only edited by the admin's.
