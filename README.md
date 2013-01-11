@@ -17,3 +17,10 @@ This mark up will be used for the new portal site for the Six Past Three forum. 
 
 - MbSlider 
 -- http://codecanyon.net/item/mbslider/89466
+- jQuery Easing
+-- http://gsgd.co.uk/sandbox/jquery/easing/
+- jQuery Validation Plugin
+-- http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+- Selectivizr 
+-- selectivizr.com
+
