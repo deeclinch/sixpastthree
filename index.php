@@ -1,9 +1,84 @@
 <?php 
-  include_once('layout/head.php');
+  //include_once('layout/head.php');
 ?>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<nav class="tnav">
+  <title>Six Past Three</title>  
+  <meta name="description" content=" ">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width">
+
+  <meta property="og:site_name" content="Six Past Three"/>
+  <meta property="og:url" content="sixpastthree.com"/>
+  <meta property="og:title" content="Six Past Three" />
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content=" " />
+  <meta property="og:image" content=" assets/img/logo.png"/>
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="canonical" href=" " />
+  <link rel="stylesheet" href="/assets/css/site.min.css">
+  <script src="/assets/js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body class="home">
+<!--[if lt IE 7]>
+    <div class=chromeframe><p>You are using a really old browser! You should <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p></div>
+<![endif]--> 
+
+<header>
+    <nav>
+        <div class="tnav">
+            <ul class="tnav_list">
+                <li class="tnav_item"><a href="/" class="tnav_link tnav_link-home">Home</a></li>
+                <li class="tnav_item"><a href="/members/" class="tnav_link tnav_link-members">03:06 Members</a></li>
+                <li class="tnav_item"><a href="/staff/" class="tnav_link tnav_link-staff">03:06 Staff</a></li>
+                <li class="tnav_item"><a href="/rpg/" class="tnav_link tnav_link-rpg">03:06 RPG's</a></li>
+                <li class="tnav_item"><a href="/wiki/" class="tnav_link tnav_link-wki">03:06 Wiki</a></li>
+                <li class="tnav_item"><a href="/social/" class="tnav_link tnav_link-social">03:06 Social</a></li>
+                <li class="tnav_item"><a href="/news/" class="tnav_link tnav_link-news">03:06 News</a></li>
+                <li class="tnav_item"><a href="/stats/" class="tnav_link tnav_link-stats">03:06 Stats</a></li>
+                <li class="tnav_item"><a href="/contact/" class="tnav_link tnav_link-contact">Contact 03:06</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="headerbg">
+        <div class="headimg">
+
+            <div class="row">
+                <div class="col col6-12">
+                    <div class="col_pad">
+                        <a href="/">
+                            <img src="/assets/img/sixpastthree-logo.png" alt="Six Past Three">
+                        </a>
+                    </div>
+                </div>
+                <div class="col col6-12">
+                    <div class="col_pad">
+                        <form action="" id="sform" method="post" class="sform">
+                            <label for="s" class="label sform_label">Search Me...</label>
+                            <input type="text" id="s" name="s" value="" class="sform_input input_text" placeholder="Search Me...">
+                            <input type="submit" value="Search" class="input_submit sform_submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</header>
+
+<!--nav class="tnav">
     <div class="wrapper">
         <ul>
             <li><a href="/members/">03:06 Members</a></li>
@@ -122,7 +197,7 @@
             </div>
         </div>
     </div>
-</div>
+</div-->
 <?php 
   include_once('layout/footer-assets.php');
 ?>

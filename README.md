@@ -11,7 +11,11 @@ This mark up will be used for the new portal site for the Six Past Three forum. 
 ## Structures and Baseplates Used
 
 - HTML 5 Baseplate
-- Inuit SCSS
+-- https://github.com/h5bp/html5-boilerplate
+- Inuit SCSS 
+-- https://github.com/csswizardry/inuit.css
+- Jameslouiz inuit SCSS Grid System 
+-- https://github.com/jameslouiz/Baseplate-inuit
 
 ## JavaScript Plug-ins Used
 

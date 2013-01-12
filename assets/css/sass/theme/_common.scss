@@ -1,0 +1,12 @@
+.container {
+	max-width: $siteWidth;
+	margin: 0 auto;
+}
+
+.js .no-script {
+	display:none;
+}
+
+.tnav, .headimg {
+	@extend .container;
+}
