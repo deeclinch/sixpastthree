@@ -14,6 +14,9 @@ $i: 1;
 
 .col {
 	float: left;
+	margin-left: $gutterWidth +px;
+	display: inline;
+	@include vendor(box-sizing,border-box)
 }
 	.col_pad {
 		margin-left: $gutterWidth +px;
