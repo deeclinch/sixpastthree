@@ -25,6 +25,24 @@
 
 
 /**
- * Theme Stlyes
+ * Theme Styles
  */
-@import "theme/styles";
+
+// Common files that build a base
+@import "theme/base/fonts";
+@import "theme/base/mixins";
+
+
+@import "theme/base/notices";
+
+// layout specific style sheets
+@import "theme/layout/layout";
+@import "theme/layout/header";
+@import "theme/layout/footer";
+
+// partials that contain styles for components of the site.
+
+
+// helpers go last so that they can be included into markup 
+// without being overwritten
+@import "theme/base/helpers";

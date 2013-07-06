@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    $NOTICIES
+\*------------------------------------*/
+
+
+// No JavaScrip Notice
+
+.js .no-jsmsg {
+    display: none;
+}
+
+.no-jsmsg, .chromeframe {
+    display: block;
+    position: fixed;
+    top: 0px;
+    background: $brandcolor02;
+    color: $white;
+    text-align: center; 
+    //padding: 1em 0em;
+    z-index: 5554;
+    width: 100%;
+
+    p {
+        color: $white;
+        padding: 1em 3em 0em;
+    }
+}
+
+

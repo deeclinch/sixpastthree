@@ -1,0 +1,101 @@
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+/**
+ * Styles for all basic font site wide
+ */
+
+%regencie {
+    font-family: 'regencie', 'Helvetica', 'Arial';
+    letter-spacing: -2px; 
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: $brandcolor01;
+    cursor: pointer;
+
+    &:visited {
+        color: $brandcolor01;
+    }
+
+    &:hover {
+        color: $brandcolor03;
+    }
+
+    &:active {
+        color: darken($brandcolor03,20%);
+    }
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+p {
+    margin-bottom:$base-spacing-unit /2 +px;
+    font-size: 14px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.alpha, .h1, h1 {
+    font-size: $h1-size +px;
+}
+.beta, .h2, h2{
+    font-size: $h2-size +px;
+}
+.gamma, .h3, h3{
+    font-size: $h3-size +px;
+}
+.delta, .h4, h4 {
+    font-size: $h4-size +px;
+}
+.epsilon, .h5, h5 {
+    font-size: $h5-size +px;
+}
+.zeta, .h6, h6 {
+    font-size: $h5-size +px;
+}
+
+.alpha, .beta, .gamma, .delta, .epsilon, .zeta,
+h1, h2, h3, h4, h5, h6 { 
+    color: $brandcolor01; 
+    margin-bottom: 0;
+    line-height:  1.2em;
+    font-family: 'regencie', 'Helvetica', 'Arial';
+    letter-spacing: -2px; 
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.highlight {
+    color: $brandcolor01;
+}
+
+.big {
+    font-size: 1.3em;
+}
+
+.brandcolor01 {
+    color: $brandcolor01;
+}
+.brandcolor02 {
+    color: $brandcolor02;
+}
+
+.small {
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+.orphan {
+    overflow: hidden;
+}

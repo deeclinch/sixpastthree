@@ -1,0 +1,175 @@
+/*------------------------------------*\
+    $HELPERS
+\*------------------------------------*/
+/**
+ * HELPERS is a set of quick reusable code that can be added to any element 
+ * to prevent having to write simple CSS multiple times
+ */
+
+// Quick floats
+// .alignright, .alignleft wordpress defaults 
+.fl, .alignleft {
+    float:left;
+    display: inline;
+} 
+.fr, .alignright {
+    float:right;
+    display: inline;
+}
+.alignleft {
+    margin: 0 $gutterWidth +px $gutterWidth +px 0
+}
+
+.alignright {
+    margin: 0 0 $gutterWidth +px $gutterWidth +px
+}
+
+
+.aligncenter {
+    display: block;
+    margin:5px auto;
+}
+
+
+// Toggling content
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.hidden {
+    position:absolute;
+    top:-99999px;
+    left:0;
+}
+
+
+// Visibility
+.invisible {
+    visibility: hidden;
+}
+
+// Image replacement
+.ir {
+    text-indent: -5000px;
+    display: block;
+}
+
+
+
+// Font styling
+.bold, .strong {
+    font-weight:bold;
+}
+.italic, .em {
+    font-style:italic;
+}
+.underlined {
+    text-decoration:underline;
+}
+
+.underline {
+    border-bottom: 1px solid $brandcolor01;
+    margin-bottom: 0.5em;
+}
+
+
+
+// Text alignment
+.tr {
+    text-align: right;
+}
+.tc {
+    text-align: center;
+}
+.tl {
+    text-align: left;
+}
+
+.indent {
+    margin-left: $gutterWidth +px
+}
+// Block and inline elements
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+
+
+// Centre images 
+img.center {
+    display: block;
+    margin:0px auto;
+}
+
+// Position Elements
+.rel {
+    position:relative;
+}
+
+
+//remove style from list
+.no-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Margin Helpers
+.mb {
+    margin-bottom: $gutterWidth +px;
+}
+
+.mt {
+    margin-top: $gutterWidth +px;
+}
+.mr {
+    margin-right: $gutterWidth +px;
+}
+.ml {
+    margin-left: $gutterWidth +px;
+}
+
+// Padding helpers
+.pad0 {
+    padding:0px;
+}
+
+//No js
+.js {
+    .nojs-show {
+        display: none;
+    }
+}
+.nojs-show {
+    display: block;
+}
+
+.js {
+    .js-hide {
+        display: none;
+    }
+}
+.no-js .js-hide {
+    display: block;
+}
+
+
+// Media Query related utilities
+
+@media only screen and (min-width: 560px) {
+    .desktophide { 
+        position:absolute;
+        top:-99999px;
+        left:0;
+    }
+}

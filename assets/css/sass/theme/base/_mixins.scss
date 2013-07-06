@@ -1,0 +1,83 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/**
+ * Any regular mixin's that can be used throughout the site
+ */
+
+@mixin mediaq-size($media-size){
+    @media only screen and (max-width:$media-size +px) { @content; }  
+}
+
+@mixin mediaq-minmax($media-sizemin, $media-sizemax){
+    @media only screen and (min-width:$media-sizemin +px) and (max-width:$media-sizemax +px) { @content; } 
+}
+
+@mixin linkcolor($link,$hover,$active){
+	color: $link;
+	&:visited { color: $link; }
+	&:hover { color: $hover; }
+	&:active { color: $active; }
+}
+
+// LINK COLOURS
+/* 
+ * @include link(1, #000, #000, #000, 0, 1, 1); 
+ * -----------------------------------------
+ * $size = Font size in em's
+ * $color = link color and visited link color
+ * $hcolor = hover link color
+ * $acolor = active link color
+ * $weight = font weight bold yes (1) or no (0)
+ * $underline = text decoration underline yes (1) or no (0)
+ * $onlink = if the style is on the actual link or on a section where the link 
+ *           is a child, yes on the link (1) No link is a child (0)
+ * 
+*/
+@mixin link($size, $color, $hcolor, $acolor, $weight, $underline, $onlink){ 
+
+    @if $onlink == 1{
+        font-size: $size +em;
+        color: $color;
+        @if $underline == 1{
+            text-decoration: underline;
+        }
+        @if $weight == 1{
+            font-weight: bold;
+        }
+
+        &:visited {
+            color: $color;
+        }
+        &:hover {
+            color: $hcolor;
+        }
+        &:active{
+            color: $acolor;
+        }
+    }
+
+    @if $onlink == 0{
+        a {
+            font-size: $size +em;
+            color: $color;
+            @if $underline == 1{
+                text-decoration: underline;
+            }
+            @if $weight == 1{
+                font-weight: bold;
+            }
+
+            &:visited {
+                color: $color;
+            }
+            &:hover {
+                color: $hcolor;
+            }
+            &:active{
+                color: $acolor;
+            }
+        }
+    }
+}
