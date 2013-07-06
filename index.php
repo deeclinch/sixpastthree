@@ -12,7 +12,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Six Past Three</title>  
+  <title>Six Past Three website</title>  
   <meta name="description" content=" ">
   <meta name="keywords" content="">
   <meta name="author" content="">
