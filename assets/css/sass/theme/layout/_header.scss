@@ -1,129 +1,136 @@
 // Top Navigation 
 
 .tnav{
-	background: darken($grey, 10%);
-	color: $white;
-	padding: 10px 0;
-	font-family: LeagueGothicRegular;
-	text-transform: uppercase;
-	font-size: 20px;
-	@include vendor(text-shadow, 2px 1px 0px darken($grey, 15%));
+    background: darken($grey, 10%);
+    color: $white;
+    padding: 10px 0;
+    font-family: LeagueGothicRegular;
+    text-transform: uppercase;
+    font-size: 20px;
+    @include vendor(text-shadow, 2px 1px 0px darken($grey, 15%));
 
 }
 
 .tnav__link {
-	color: lighten($grey, 40%);
-	padding-right: 30px;
-	@include vendor(transition, color 0.2s ease);
+    color: lighten($grey, 40%);
+    padding-right: 30px;
+    @include vendor(transition, color 0.2s ease);
 
-	&:hover {
-		color: $brandcolor02;
-	}
+    &:hover {
+        color: $brandcolor02;
+    }
 }
 
 .tnav-bottom  { 
-	background: lighten($grey, 15%);
-	@include vendor(text-shadow, 2px 1px 0px $grey);
+    background: lighten($grey, 15%);
+    @include vendor(text-shadow, 2px 1px 0px $grey);
 
-	.tnav__link {
-		color: $white;
-	}
+    .tnav__link {
+        color: $white;
+
+        &:hover {
+            color: lighten($brandcolor03, 30%);
+        }
+    }
 }
 
 
 .tnav__item{
-	display: inline;
+    display: inline;
 }
 
 //Header
 
 .headerbg {
-	background: url('../img/header__grad.jpg') repeat-x #7494aa;
+    background: url('../img/header__grad.jpg') repeat-x #7494aa;
 }
 
 .headimg {
-	background: url('../img/header__img.jpg') no-repeat transparent top center;
+    background: url('../img/header__img.jpg') no-repeat transparent top center;
 }
 
 .logo_main {
-	margin-top: 62px;
-	margin-bottom: 62px;
+    margin-top: 62px;
+    margin-bottom: 62px;
 }
 
 .input_text {
-	background: $white;
-	@include vendor(border-radius,3px);
-	@include vendor(transition, all 0.5s ease);
-	@include vendor(box-shadow,inset 0px 3px 7px #d5d5d5);
-	border: 1px solid #cfcfcf;
-	padding: 7px 10px;
-	color: $grey;
+    background: $white;
+    @include vendor(border-radius,3px);
+    @include vendor(transition, all 0.5s ease);
+    @include vendor(box-shadow,inset 0px 3px 7px #d5d5d5);
+    border: 1px solid #cfcfcf;
+    padding: 7px 10px;
+    color: $grey;
 
 
-	&:focus {
-		@include vendor(box-shadow,inset 0px 0px 0px $white);
-		outline: none;
-	}
+    &:focus {
+        @include vendor(box-shadow,inset 0px 0px 0px $white);
+        outline: none;
+    }
 }
 .sform {
-	padding-top: 80px;
-	float: right;
+    padding-top: 80px;
+    float: right;
 
 }
 .sform__label {
-	text-indent: -9999px;
-	height: 1px;
+    text-indent: -9999px;
+    height: 1px;
 }
 
 .sform__submit {
-	text-indent: -9999999px;
-	background: url('../img/search.png') no-repeat top center; 
-	width: 33px;
-	height: 40px;
-	border: 0; 
+    text-indent: -9999999px;
+    background: url('../img/search.png') no-repeat top center; 
+    width: 33px;
+    height: 40px;
+    border: 0; 
 
-	&:hover {
-		background-position: center center;
-	}
-	&:active {
-		background-position: bottom center;
-	}
+    &:hover {
+        background-position: center center;
+    }
+    &:active {
+        background-position: bottom center;
+    }
 }
+
+// Forum Button
 
 .bt {
-	position: absolute;
-	top: -21px; 
-	right: 0;
+    background: url('../img/button_green.png') repeat-x center center $brandcolor03; 
+    @include vendor(border-radius, 5px);
+    @include vendor(box-shadow, 0px 3px 0px darken($brandcolor03, 10%));
+    padding: 15px 10px;
+    font-size: 30px;
+    position: absolute;
+    top: -18px;
+    right: 0;
+    color: $white;
+    @extend .cf;
+
+    &:hover {
+        color: lighten($brandcolor03, 40%) !important; 
+        top: -17px;
+        @include vendor(box-shadow, 0px 2px 0px darken($brandcolor03, 10%));
+    }
+
+    &:active {
+        top: -15px;
+        @include vendor(box-shadow, inset 0px 2px 3px darken($brandcolor03, 10%));
+    }
 }
 
-.bt__text, .bt__icon {
-	background: url('../img/button_green.png') repeat-x center center $brandcolor03; 
-	@include vendor(border-radius, 5px);
-	@include vendor(box-shadow, 0px 3px 0px darken($brandcolor03, 10%));
-	padding: 2px 0 2px 30px;
-	font-size: 30px;
-	color: $white;
-	@extend .inline-block;
-
-	&:hover {
-		color: lighten($brandcolor03, 40%) !important; 
-		top: -20px;
-		@include vendor(box-shadow, 0px 2px 0px darken($brandcolor03, 10%));
-	}
-
-	&:active {
-		top: -18px;
-		@include vendor(box-shadow, inset 0px 2px 3px darken($brandcolor03, 10%));
-	}
+.bt__text {
+    @extend .fl;
+    padding: 5px 10px 5px 5px;
+    line-height: 20px;
 }
-
 
 .bt__icon {
-	background: url('../img/icon_arrow.png') center center no-repeat;
-	border-left: 2px solid $white;
-	width: 18px; 
-	height: 20px; 
-	@extend .inline-block;
-	margin: 10px 10px;
-	padding: 10px;
+    background: url('../img/icon_arrow.png') center center no-repeat;
+    border-left: 2px solid $white;
+    width: 18px; 
+    height: 20px; 
+    @extend .fr;
+    padding: 5px 5px 5px 10px;
 }

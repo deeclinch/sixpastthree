@@ -90,10 +90,114 @@
             </ul>
         </div>
     </div>
-
-
 </header>
 
+
+<div class="whitestrip">
+    <div class="wrapper">
+        <div class="slider">
+            <ul class="no-style">
+                <li><a href="" target="_blank"><img src="/assets/img/slider01.jpg" alt="Banner alt text"></a></li>
+                <li><a href="" target="_blank"><img src="/assets/img/slider01.jpg" alt="Banner alt text"></a></li>
+                <li><a href="" target="_blank"><img src="/assets/img/slider01.jpg" alt="Banner alt text"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="greystrip">
+    <div class="wrapper">
+
+        <div class="row" class="features">
+            <div class="col col3-12">
+                <div class="col-inner">
+                     <a href="" class="col features__link">
+                        <img src="/assets/img/feature.jpg" class="feature__img" alt="">
+                        <span class="features__title">Feature Link Title</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col col3-12">
+                <div class="col-inner">
+                    <a href="" class="col features__link">
+                        <img src="/assets/img/feature.jpg" class="feature__img" alt="">
+                        <span class="features__title">Feature Link Title</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col col3-12">
+                <div class="col-inner">
+                    <a href="" class="col features__link">
+                        <img src="/assets/img/feature.jpg" class="feature__img" alt="">
+                        <span class="features__title">Feature Link Title</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col col3-12">
+                <div class="col-inner">
+                    <a href="" class="col features__link">
+                        <img src="/assets/img/feature.jpg" class="feature__img" alt="">
+                        <span class="features__title">Feature Link Title</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mt">
+            <div class="col col8-12">
+                <div class="col-inner block">
+                    <h1 class="h2 block__title">Hello Fellow Procrastinators and Welcome to Six Past <span class="featcolor">Three</span></h1>
+                    <div class="block__content rel">
+                        <p>For almost a decade the Six Past Three group have been a collaboration of unique minds seeking refuge from their busy lives. People who are creative and imaginative seeking equally <a href="/forum">creative outlets</a>.</p>
+                        <p>Your visit to our humble home can consist of ....</p>
+                        <ul>
+                            <li>Participating in a diverse range of topics from the serious to just plain stupid.</li>
+                            <li>Contributing *squee(s)* to a range fan forum discussions and articles.</li>
+                            <li>Getting to know people from all around the world with different interests.</li>
+                            <li>Showcasing your creative aptitudes and receiving instant feedback.</li>
+                            <li>Learning something about yourself you may not have fully realised among new friends.</li>
+                        </ul>
+                        <p>The possibilities are endless.</p>
+                        <p>So with the off chance we do actually inspire something within you or even just because we're somewhat entertaining, then by all means- come join in on the fun. You may also eventually start calling Six Past Three home too.</p>
+
+                        <img src="/assets/img/team-signature.png" alt="teh 03:06 Team xxx" class="block__signature">
+                    </div>
+                </div>
+            </div>
+            <div class="col col4-12">
+                <div class="col-inner block">
+                    <h2 class="h2 block__title">Six Past <span class="featcolor">Three</span> News Categories</h2>
+                    <div class="block__content block__content-nav">
+                        <nav>
+                            <ul class="block__menu ">
+                                <li class="block__li"><a href="" class="block__link">Forum Modifications</a></li>
+                                <li class="block__li"><a href="" class="block__link">New Features</a></li>
+                                <li class="block__li"><a href="" class="block__link">Art Challenge Results</a></li>
+                                <li class="block__li"><a href="" class="block__link">Category Title Extras</a></li>
+                                <li class="block__li"><a href="" class="block__link">Category Title Extras</a></li>
+                                <li class="block__li"><a href="" class="block__link">Category Title Extras</a></li>
+                                <li class="block__li"><a href="" class="block__link">Category Title Extras</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+
+
+
+
+    </div>
+</div>
+
+
+<?php 
+  include_once('layout/footer-assets.php');
+?>
 
 
 </body>

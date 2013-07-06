@@ -42,6 +42,10 @@
 
 // partials that contain styles for components of the site.
 
+@import "theme/partials/slider-main";
+@import "theme/partials/feature"; 
+@import "theme/partials/block"; 
+
 
 // helpers go last so that they can be included into markup 
 // without being overwritten
